@@ -1,0 +1,11 @@
+<body>
+    <div class="header">
+        <img src="../../../assets/images/arrow-icon.png" class="back-arrow" routerLink="/theme">
+        <h1>Wegwijs</h1>
+    </div>
+    <content>
+        <div class="grid-container">
+            <button *ngFor="let number of numbers" class="grid-item">{{number}}</button>
+        </div>
+    </content>
+</body>

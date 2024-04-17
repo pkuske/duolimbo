@@ -1,0 +1,27 @@
+.header {
+    display: grid;
+    grid-template-columns: 25% auto;
+    margin-top: 20px;
+    .back-arrow {
+        width: 35px;
+        margin: 10px;
+        margin-left: 20px;
+        border: 2px solid #B972DB;
+        border-radius: 10px;
+        padding: 5px;
+        
+        &:active {
+            filter: drop-shadow(3px 3px 2px #181e29);
+        }
+    }
+
+    h1 { 
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--primary-text-color);
+        text-align: center;
+        margin: 5px;
+        font-size: 40px;
+    }
+}

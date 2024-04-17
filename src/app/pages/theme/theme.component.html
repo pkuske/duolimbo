@@ -1,0 +1,21 @@
+<body>
+    <div class="header">
+        <img src="../../../assets/images/home-icon.png" class="back-arrow" routerLink="../">
+        <h1>Thema</h1>
+    </div>
+    <content>
+        <div class="card food" (click)="goToOverview('food')">
+            <h2>Eten</h2>
+        </div>
+        <div class="card social" (click)="goToOverview('social')">
+
+            <h2>Sociaal</h2>
+        </div>
+        <div class="card directions" (click)="goToOverview('directions')">
+            <h2>Wegwijs</h2>
+        </div>
+        <div class="card seasons" (click)="goToOverview('seasons')">
+            <h2>Seizoenen</h2>
+        </div>
+    </content>
+</body>

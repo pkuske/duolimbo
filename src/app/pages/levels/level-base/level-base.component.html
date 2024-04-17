@@ -1,0 +1,14 @@
+<header>
+<h2>Level {{level}}</h2>
+<h1 routerLink="/">X</h1>
+<div class="progress-bar">
+    <h3 class="done" *ngFor="let dot of getDoneArray(); let i = index">.</h3>
+    <h3 class="to-do" *ngFor="let dot of getToDoArray(); let i = index">.</h3>
+</div>
+</header>
+<body>
+    <content>
+        <router-outlet></router-outlet>
+    </content>
+</body>
+253

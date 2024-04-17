@@ -1,0 +1,84 @@
+.header {
+    display: grid;
+    grid-template-columns: 25% auto;
+    margin-top: 20px;
+    .back-arrow {
+        width: 35px;
+        margin: 10px;
+        margin-left: 20px;
+        border: 2px solid #B972DB;
+        border-radius: 10px;
+        padding: 5px;
+        
+        &:active {
+            filter: drop-shadow(3px 3px 2px #181e29);
+        }
+    }
+
+    h1 { 
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #B972DB;
+        text-align: center;
+        margin: 5px;
+        font-size: 40px;
+        text-shadow: var(--primary-text-shadow);
+    }
+}
+
+content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: absolute;
+    margin-left: auto;
+    right: 8%;
+    padding: 10px;
+    margin-top: 30px;
+
+
+    .card {
+        margin: 10px;
+        width: 130px;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: var(--primary-box-shadow);
+
+        input {
+            background: none;
+            border: none;
+        }
+
+        h2 {
+            font-size: 45px;
+            color: var(--accent-text-color);
+            text-shadow: var(--secondary-text-shadow);
+            transform: rotate(90deg) translate(35%, 70%);
+        }
+    }
+
+    .summer {
+        border: 3px solid #4fd64f;
+        background-image: url("../../../../assets/images/summer.png");
+        background-size: 175px, 300px;
+    }
+
+    .fall {
+        border: 3px solid #dd9a35;
+        background-image: url("../../../../assets/images/fall.png");
+        background-size: 175px, 300px;
+    }
+
+    .winter {
+        border: 3px solid #76A5AF;
+        background-image: url("../../../../assets/images/winter.png");
+        background-size: 175px, 300px;
+    }
+
+    .spring {
+        border: 3px solid #ffc0cb;
+        background-image: url("../../../../assets/images/spring.png");
+        background-size: 175px, 300px;
+    }
+    
+}

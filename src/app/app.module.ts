@@ -12,6 +12,9 @@ import { FoodComponent } from './pages/theme/food/food.component';
 import { DirectionsComponent } from './pages/theme/directions/directions.component';
 import { SeasonsComponent } from './pages/theme/seasons/seasons.component';
 import { LevelBaseComponent } from './pages/levels/level-base/level-base.component';
+import { LevelTranslateComponent } from './pages/levels/level-translate/level-translate.component';
+import { LevelConnectComponent } from './pages/levels/level-connect/level-connect.component';
+import { LevelListenComponent } from './pages/levels/level-listen/level-listen.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import { LevelBaseComponent } from './pages/levels/level-base/level-base.compone
     DirectionsComponent,
     SeasonsComponent,
     LevelBaseComponent,
+    LevelTranslateComponent,
+    LevelConnectComponent,
+    LevelListenComponent,
   ],
   imports: [
     BrowserModule,

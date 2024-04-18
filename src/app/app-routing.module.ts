@@ -9,6 +9,9 @@ import { SocialComponent } from './pages/theme/social/social.component';
 import { DirectionsComponent } from './pages/theme/directions/directions.component';
 import { SeasonsComponent } from './pages/theme/seasons/seasons.component';
 import { LevelBaseComponent } from './pages/levels/level-base/level-base.component';
+import { LevelConnectComponent } from './pages/levels/level-connect/level-connect.component';
+import { LevelListenComponent } from './pages/levels/level-listen/level-listen.component';
+import { LevelTranslateComponent } from './pages/levels/level-translate/level-translate.component';
 
 const routes: Routes = [
   { 
@@ -50,7 +53,13 @@ const routes: Routes = [
   },
   {
     path: 'level',
-    component: LevelBaseComponent
+    component: LevelBaseComponent,
+    children: [
+      { path: '', redirectTo: 'level-connect', pathMatch: 'full'},
+      { path: 'level-connect', component: LevelConnectComponent},
+      { path: 'level-listen', component: LevelListenComponent},
+      { path: 'level-translate', component: LevelTranslateComponent},
+    ]
   }
 ];
 

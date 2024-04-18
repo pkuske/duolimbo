@@ -14,7 +14,6 @@ body {
             width: 35px;
             margin: 10px;
             margin-left: 20px;
-            border: 2px solid #76A5AF;
             border-radius: 10px;
             padding: 5px;
             
@@ -27,7 +26,7 @@ body {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            color: var(--tertiary-theme-color);
+            color: var(--primary-color);
             text-align: center;
             margin: 5px;
             font-size: 40px;

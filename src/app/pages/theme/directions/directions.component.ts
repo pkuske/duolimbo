@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class DirectionsComponent {
   numbers: number[] = Array.from({ length: 20 }, (_, i) => i + 1);
+
+  setLevel(level: number) {
+    localStorage.setItem('currentLevel', level.toString());
+  }
 }

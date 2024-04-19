@@ -1,16 +1,12 @@
 <content>
     <h2>Verbind de woorden</h2>
-    <ul class="word-connect">
-        <li>Enne</li>
-        <li>Alles goed?</li>
-        <li>Enne</li>
-        <li>Hoi</li>
-        <li>Enne</li>
-        <li>Lang niet gezien.</li>
-        <li>Enne</li>
-        <li>Mooi weer hè?</li>
-    </ul>
-    <div class="bottom-card">
-        <input type="submit" value="Verder gaan">
+    <div class="word-connect">
+        <button 
+            *ngFor="let button of buttonDisabledStates; let i = index"
+            (click)="onButtonClick(i)"
+            [disabled]="button"
+            [ngClass]="{'disabled': button, 'enabled': !button}">
+            Button {{i + 1}}
+        </button>
     </div>
 </content>

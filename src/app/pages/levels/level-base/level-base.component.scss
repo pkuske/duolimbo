@@ -25,7 +25,6 @@ header {
             text-align: center;
             transform: translateY(-130px);
             font-size: 90px;
-            //text-shadow: var(--primary-text-shadow);
         } 
 
         .done {
@@ -35,6 +34,33 @@ header {
         .to-do {
             color: var(--background-color);
         }
+    }    
+}
+
+footer {
+    position: absolute;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+    background-color: #232b3a;
+    width: 100%;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100px;
+    bottom: 0;
+
+    input {
+        width: 250px;
+        color: var(--light-text-color);
+        font-weight: bold;
+        border: none;
+        box-shadow: var(--primary-box-shadow);
+        border-right: var(--alt-button-border);
+        border-bottom: var(--alt-button-border);
+        font-size: 25px;
+        background-color: var(--tertiary-color);
+        border-radius: var(--primary-border-radius);
+        padding: 10px;
     }
-          
 }

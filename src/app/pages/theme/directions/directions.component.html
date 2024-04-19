@@ -5,7 +5,7 @@
     </div>
     <content>
         <div class="grid-container">
-            <button *ngFor="let number of numbers" class="grid-item">{{number}}</button>
+            <button *ngFor="let number of numbers" class="grid-item" (click)="setLevel(number)" routerLink="/level">{{number}}</button>
         </div>
     </content>
 </body>

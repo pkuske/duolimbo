@@ -28,7 +28,6 @@ export class LevelBaseComponent{
   }
 
   checkAndContinue() {
-    //reset counter when it reaches 10, so when the level has been cleared
     if(this.levelProgress < 10) {
       this.levelProgress = this.levelProgress + 1;
     } else {

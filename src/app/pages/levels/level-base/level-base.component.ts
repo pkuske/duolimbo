@@ -10,9 +10,9 @@ import { Location } from '@angular/common';
 
 export class LevelBaseComponent{
   private levelProgress: number = 0;
-
+  public showFooter: boolean  = false
   constructor(private location: Location) {}
-  
+
   back(): void {
     this.location.back();
   }
@@ -27,13 +27,11 @@ export class LevelBaseComponent{
     return new Array(10 - this.levelProgress);
   }
 
-  checkAndContinue() {
+  addProgress() {
     if(this.levelProgress < 10) {
       this.levelProgress = this.levelProgress + 1;
     } else {
       this.levelProgress = 0;
     }
-    
-    console.log(this.levelProgress);
   }
 }

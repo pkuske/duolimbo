@@ -55,7 +55,7 @@ const routes: Routes = [
     path: 'level',
     component: LevelBaseComponent,
     children: [
-      { path: '', redirectTo: 'level-connect', pathMatch: 'full'},
+      { path: '', redirectTo: 'level-translate', pathMatch: 'full'},
       { path: 'level-connect', component: LevelConnectComponent},
       { path: 'level-listen', component: LevelListenComponent},
       { path: 'level-translate', component: LevelTranslateComponent},

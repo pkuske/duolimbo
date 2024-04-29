@@ -11,6 +11,6 @@
         <router-outlet></router-outlet>
     </content>
 </body>
-<footer>
-    <input type="submit" value="Verder gaan" (click)="checkAndContinue()">
+<footer *ngIf="showFooter">
+    <input type="submit" value="Verder gaan">
 </footer>

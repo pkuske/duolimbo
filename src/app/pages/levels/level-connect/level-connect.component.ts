@@ -12,9 +12,10 @@ export class LevelConnectComponent {
   buttonMatchStates: boolean[] = [false, false, false, false, false, false, false, false];
   clickedButton: number[] = [];
 
-  wordSet = connectData.translations
+  wordSet = connectData.translations;
 
   onButtonClick(index: number) {
+    console.log(this.wordSet);
     console.log(this.clickedButton);
     this.buttonDisabledStates[index] = true;
 

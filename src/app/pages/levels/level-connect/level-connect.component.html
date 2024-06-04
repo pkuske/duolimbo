@@ -1,12 +1,23 @@
 <content>
     <h2>Match de woorden</h2>
-    <div class="word-connect">
-        <button 
+    <div class="grid">
+        <!-- <button 
             *ngFor="let button of buttonDisabledStates; let i = index"
             (click)="onButtonClick(i)"
             [disabled]="button"
             [ngClass]="{'disabled': button, 'enabled': !button}">
             Button {{i + 1}}
-        </button>
+        </button> -->
+        <div class="dialect">
+            <div *ngFor="let wordPair of wordPairs; let i = index" class="cell">{{ wordPair.dialect }}</div>
+        </div>
+        <div class="dutch">
+            <div *ngFor="let wordPair of wordPairs; let i = index" class="cell">{{ wordPair.dutch }}</div>
+        </div>
     </div>
+</content>
+<content>
+    
+    
+    
 </content>

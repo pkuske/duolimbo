@@ -1,23 +1,21 @@
-<!-- <content>
-    <h2>Vertaal de zin:</h2>
-    <h3 class="dutch">Kiek mam, ut schniet boete!</h3>
-    <div class="clicked-words" *ngFor="let value of selectedWords">
-        <p (click)="removeWord(value)">{{ selectedWords }}</p>    
-    </div>
-    <div class="word-selection" *ngFor="let value of wordSelection">
-        <button (click)="clickWord(value)">{{ value }}</button>
-    </div>
-</content> -->
 <content>
     <h2>Vertaal de zin:</h2>
         <h3>Kinne ver vanoavend pannekeuk ete?</h3>
     <div class="sentence-container">
-        <p (click)="onWordSelect(word, i)" *ngFor="let word of selectedWords; let i = index" class="word-selection">{{ word }}</p>
+        <p 
+            (click)="onWordSelect(word, i)" 
+            *ngFor="let word of selectedWords; let i = index" 
+            class="word-selection"
+        >{{ word }}</p>
     </div>
     
     <h4>Woordenkeuze:</h4>
     <div class="clickable-container">
-        <p (click)="onWordUnselect(word, i)" *ngFor="let word of clickedWords; let i = index" class="clickable-words">{{ word }}</p>
+        <p 
+            (click)="onWordUnselect(word, i)" 
+            *ngFor="let word of clickedWords; let i = index" 
+            class="clickable-words"
+        >{{ word }}</p>
     </div>
 </content>
 

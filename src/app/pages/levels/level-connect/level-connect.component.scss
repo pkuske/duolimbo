@@ -1,37 +1,58 @@
-content {
-    text-align: center;
+// content {
+//     text-align: center;
     
-    h2 {
-        color: var(--primary-color);
-        margin-top: 50px;
-        font-size: 30px;
-    }
+//     h2 {
+//         color: var(--primary-color);
+//         margin-top: 50px;
+//         font-size: 30px;
+//     }
 
-    .word-connect {
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        list-style-type: none;
-    }  
+//     .word-connect {
+//         margin-top: 50px;
+//         display: grid;
+//         grid-template-columns: 50% 50%;
+//         list-style-type: none;
+//     }  
 
-    button { 
-        font-size: 20px;
-        font-weight: bold;
-        color: var(--light-text-color);
-        background-color: var(--primary-color);
-        border-radius: 10px;
-        padding: 10px;
-        border: none;
-        margin: 10px;
-    }
-    .enabled {
-        border-right: var(--dark-button-border);
-        border-bottom: var(--dark-button-border);
-    }
+//     button { 
+//         font-size: 20px;
+//         font-weight: bold;
+//         color: var(--light-text-color);
+//         background-color: var(--primary-color);
+//         border-radius: 10px;
+//         padding: 10px;
+//         border: none;
+//         margin: 10px;
+//     }
+//     .enabled {
+//         border-right: var(--dark-button-border);
+//         border-bottom: var(--dark-button-border);
+//     }
 
-    .disabled {
-        background-color: var(--disabled-button-color);
-        border-right: var(--disabled-button-border);
-        border-bottom: var(--disabled-button-border);
-    }
-}
+//     .disabled {
+//         background-color: var(--disabled-button-color);
+//         border-right: var(--disabled-button-border);
+//         border-bottom: var(--disabled-button-border);
+//     }
+// }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .cell {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: lightblue;
+  }
+  
+  .matched {
+    background-color: lightgreen;
+  }
+  
